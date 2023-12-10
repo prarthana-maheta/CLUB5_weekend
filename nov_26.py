@@ -1,7 +1,7 @@
 s1 = 'stDudents of this batch are going to rock the INDIAN software industry?'
 # print(s1[-11])
 # print(s1[30])
-# print(s1.count("e",-10,30))
+# print(s1.count("e",-15,-1))
 # print(s1.count("are"))
 # print(s1.count("europe"))
 #
@@ -9,34 +9,40 @@ s1 = 'stDudents of this batch are going to rock the INDIAN software industry?'
 # print(s1.count("e", 20, 40))
 # print(s1.count("e", -40, -20))
 
-# s1 = 'stDudents of this batch are going to rock the INDIAN software industry?'
+s1 = 'stDudents of this batch are going to rock the INDIAN software industry?'
 # print(s1)
-# s2=s1.encode()
-# print(s2.capitalize())
-# print(s1.encode("utf-16"))
 # s2=s1.encode("utf-16")
+# print(s2)
+# # print(s2.capitalize())
+# # print(s1.encode("utf-16"))
+# # s2=s1.encode("utf-16")
 # print(s2.decode("utf-16"))
 
 s1 = 'stDudents of this batch are going to rock the INDIAN software industry?'
-# print(s1.endswith("?"))
-# print(s1.endswith("try!"))
-# # print(s1.endswith("is", 40))
-# # s1.endswith("s", -40, 60)
-#
-# print(s1.startswith("s"))
+# print(s1.endswith("?",15,25))
+# # print(s1.endswith("try!"))
+# # # print(s1.endswith("is", 40))
+# # # s1.endswith("s", -40, 60)
+# #
+# print(s1.startswith("s",15))
 # print(s1.startswith("t", 1,3))
 
-s1 = 'students of this batch are going to rock the INDIAN software industry?'
+s1 = 'stuDdents of tDhis DbatchD are goiDng to rock the INDIAN software industry?'
 
-# print(s1.find("D"))
+# print(s1.find("~"))
 # # # print(s1.find("e"))
-# print(s1.index("D"))
-# print(s1.rfind("D",))
+# print(s1.index("~"))
+# print(s1[13])
+print(s1.rfind("D",12,24))
 # print(s1.lfind("D"))
-# print(s1.rindex("D"))
+print(s1.rindex("D"))
 # print(s1.lindex("D"))
 #
 
+# sum of all vowels coming in s1
+#
+# s1 encrypt and decrypt
+# find all the "e" index
 
 
 # """
@@ -87,26 +93,33 @@ s1 = 'students of this batch are going to rock the INDIAN software industry?'
 # # # print(s1.islower())
 # # # print(s1.istitle())
 # #
-# # s1 = "二千二十"
-# # s2 = "AlakhPandya"
-# # s3 = "9876543210"
-# # # s4 = "AlakhPandya9876543210"
-# # # # print(s2.isnumeric())
-# # # # print(s2.isalpha())
-# # # # print(s4.isalnum())
-# # # # print(s3.isdecimal())
-# # # # print(s3.isdigit())
-# # # # print(s1.isascii())
+s1 = "二千二十"
+s2 = "AlakhPandya"
+s3 = "9876543210"
+s4 = "AlakhPandya9876543210"
+s5 = "5⁴"
+s6 = "②⓪②②"
+s7 = "½"
+s8 = "二千二十二"
+# print(s2.isnumeric())
+# print(s2.isalpha())
+# print(s4.isalnum())
+# print(s3.isdecimal())
+# print(s7.isnumeric())
+# print(s3.isdigit())
+# print(s6.isdigit())
+# print(s5.isdigit())
+# print(s3.isascii())
 # # #
 # # #
 # # # s5 = "₹5000"
-# # # s6 = "abdh"
-# # # # print(s6.isidentifier())
-# # # #
-# # # #
-# # # s7 = " anbfbvh\t b c"
-# # # # print(s7.isspace())
-# # # # print(s7.isprintable())
+s6 = "abdh \n"
+# print(s6.isidentifier())
+#
+#
+s7 = " "
+# print(s7.isspace())
+# print(s7.isprintable())
 # # #
 # # # """
 # # # The difference between isnumeric, isdigit & isdecimal
@@ -115,7 +128,7 @@ s1 = 'students of this batch are going to rock the INDIAN software industry?'
 # # # print(s4.isdecimal())   # only recognizes digits from 0 to 9 and nothing else.
 # # # print(s4.isdigit())     # also recognizes subscript, superscript, circled numbers
 # # # print(s4.isnumeric())   # also recognizes roman numerals, vulgar fractions, digits from other languages
-# # #
+# # # 1/2
 # # # print(s5.isnumeric())
 # # # """
 # # #
@@ -125,12 +138,12 @@ s1 = 'students of this batch are going to rock the INDIAN software industry?'
 # # #
 # # # # list(strings)
 # # # # [] datatype list
-# # # s6 = ('students of this batch aregoing to rock the indian software '
-# # #       'industry!\nBecause they are very sincere.\nThey also do their homework on time.        ')
-# # # # print(s6)
-# # # # print(s6.split(" ")) #return list
+s6 = 'students of this batch aregoing to rock the indian software industry!\nBecause they are very sincere.\nThey also do their homework on time.        '
+# print(s6)
+# print(s6.split("~")) #return list
 # # # # print(s6.split("z"))
-# # # # print(s6.split(" ", 4))
+# print(s6.split(" ", 4))
+# print(s6.splitlines())
 # # # #
 # # # # print(s6.rsplit(" ",3))
 # # # # print(s6.split(" "))
@@ -181,47 +194,4 @@ s1 = 'students of this batch are going to rock the INDIAN software industry?'
 # #
 # #
 # #
-# # # Collections in Python
-# # """
-# # Ordered     Immutable   string      "ahfahdxsd"
-# # Ordered     Mutable     list        [1,2,3]
-# # Ordered     Immutable   tuple       (1,2,3)
-# # Unordered   Mutable     set         {1,2,3,5}
-# # Unordered   Mutable     Dict         {"name":"prarthana"}
-# #
-# # Two special collections:
-# # strings: Ordered & Immutable collections of characters              " "/ ' '
-# # dictionaries: Unordered & Mutable collections of key-value pairs
-# # """
-# #
-# # # # list: Ordered & Mutable collection of members
-# # # list1=[1,2,3,4,5,6,7,8,91,0]
-# # numbers = [33,12, 0, -125, 44, 33, 4791234, -5592, 33]
-# # # index     0  1    2     3   4
-# # #          -9 -8    -7
-# # # print(len(numbers))
-# # # print(type(numbers))
-# # # s='123456789'
-# # # s=123456789
-# # # print(list(s))
-# # print(numbers[2:8])
-# #
-# # print altrenate elements from list
-# #
-# # perform addition between first and last element
-# #
-# #
-# #
-# #
-# #
-# #
-# #
-# #
-# # print(len(numbers)-1)
-#
-# numbers = [33,12, 0, -125, 44, 33, 4791234, -5592, "33"]
-#
-# print(min(numbers))
-# print(max(numbers))
-#
 #
