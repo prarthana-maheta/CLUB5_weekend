@@ -3,10 +3,10 @@
 # abc='1234556'
 # list1=list(abc)
 # list2=[]
-# for i in list1:
-#     if i not in list2:
-#         print(i)
-#         list2.append(i)
+for i in range(1,100):
+    if i not in list2:
+        print(i)
+        list2.append(i)
 #
 # print(''.join(list2))
 # print(list2)
@@ -26,7 +26,7 @@
 #         print(i)
 a=10
 list1=[1,2,10,10,3,4,10]
-for i in range(len(list1[3:5])):
+for i in range(len(list1)):
     print(list1[i])
     if list1[i] ==10:
         print(i)
